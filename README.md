@@ -74,3 +74,5 @@ The site is optimized for Vercel deployment:
 4. Deploy!
 
 All configurations are already set up for optimal performance.
+
+Test push to verify the renamed repository works.
