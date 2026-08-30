@@ -1,5 +1,5 @@
 const INDEXNOW_KEY = "1dac02664f4d441084286ceca1a2640e";
-const BASE_URL = "https://almujax.com";
+const BASE_URL = "https://mujaaco.com";
 
 const SEARCH_ENGINES = [
   "https://www.bing.com/indexnow",
@@ -18,7 +18,7 @@ async function notifyIndexNow(urls: string[]) {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            host: "almujax.com",
+            host: "mujaaco.com",
             key: INDEXNOW_KEY,
             keyLocation: `${BASE_URL}/${INDEXNOW_KEY}.txt`,
             urlList: urls.slice(0, 100),

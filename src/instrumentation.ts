@@ -4,10 +4,10 @@ export async function register() {
     process.env.NODE_ENV === "production"
   ) {
     const urls = [
-      "https://almujax.com/sitemap.xml",
-      "https://almujax.com/feed.xml",
-      "https://almujax.com/atom.xml",
-      "https://almujax.com/llms.txt",
+      "https://mujaaco.com/sitemap.xml",
+      "https://mujaaco.com/feed.xml",
+      "https://mujaaco.com/atom.xml",
+      "https://mujaaco.com/llms.txt",
     ];
 
     const pings = [
@@ -23,10 +23,10 @@ export async function register() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            host: "almujax.com",
+            host: "mujaaco.com",
             key: "1dac02664f4d441084286ceca1a2640e",
             keyLocation:
-              "https://almujax.com/1dac02664f4d441084286ceca1a2640e.txt",
+              "https://mujaaco.com/1dac02664f4d441084286ceca1a2640e.txt",
             urlList: urls,
           }),
           signal: AbortSignal.timeout(5000),

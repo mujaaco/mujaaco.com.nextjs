@@ -5,7 +5,7 @@ const serverEnvSchema = z.object({
   NODE_ENV: z
     .enum(["development", "production", "test"])
     .default("development"),
-  SITE_URL: z.string().url().default("https://almujax.com"),
+  SITE_URL: z.string().url().default("https://mujaaco.com"),
   RESEND_API_KEY: z.string().optional(),
   CONTACT_EMAIL: z.string().email().optional(),
 });

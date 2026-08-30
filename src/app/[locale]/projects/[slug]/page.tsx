@@ -59,12 +59,12 @@ export async function generateMetadata({
     : "en";
   const fullPath = await findProjectFile(slug);
   const base = {
-    canonical: `https://almujax.com/${validLocale}/projects/${slug}`,
+    canonical: `https://mujaaco.com/${validLocale}/projects/${slug}`,
     languages: {
-      en: `https://almujax.com/en/projects/${slug}`,
-      ar: `https://almujax.com/ar/projects/${slug}`,
-      fr: `https://almujax.com/fr/projects/${slug}`,
-      "x-default": `https://almujax.com/en/projects/${slug}`,
+      en: `https://mujaaco.com/en/projects/${slug}`,
+      ar: `https://mujaaco.com/ar/projects/${slug}`,
+      fr: `https://mujaaco.com/fr/projects/${slug}`,
+      "x-default": `https://mujaaco.com/en/projects/${slug}`,
     },
   };
 
@@ -75,17 +75,17 @@ export async function generateMetadata({
     const title = data.title || slug;
     const desc = data.description || "Open-source project by Mujahid Siyam";
     return {
-      title: `${title} | Almuja (Mujahid Siyam)`,
+      title: `${title} | Mujaa (Mujahid Siyam)`,
       description: desc,
       alternates: base,
       openGraph: {
-        title: `${title} | Almuja (Mujahid Siyam)`,
+        title: `${title} | Mujaa (Mujahid Siyam)`,
         description: desc,
         type: "article",
-        url: `https://almujax.com/${validLocale}/projects/${slug}`,
+        url: `https://mujaaco.com/${validLocale}/projects/${slug}`,
         images: [
           {
-            url: "https://almujax.com/img/profile-engineer-1200x630.png",
+            url: "https://mujaaco.com/img/profile-engineer-1200x630.png",
             width: 1200,
             height: 630,
             alt: title,
@@ -135,7 +135,7 @@ export default async function ProjectPage({
         <SoftwareSourceCodeStructuredData
           name={project.title}
           description={project.description}
-          url={`https://almujax.com/${validLocale}/projects/${slug}`}
+          url={`https://mujaaco.com/${validLocale}/projects/${slug}`}
           codeRepository={project.githubUrl}
           dateCreated={project.date}
           programmingLanguage={project.language}
@@ -149,7 +149,7 @@ export default async function ProjectPage({
                   : validLocale === "fr"
                     ? "Accueil"
                     : "Home",
-              url: `https://almujax.com/${validLocale}`,
+              url: `https://mujaaco.com/${validLocale}`,
             },
             {
               name:
@@ -158,11 +158,11 @@ export default async function ProjectPage({
                   : validLocale === "fr"
                     ? "Projets"
                     : "Projects",
-              url: `https://almujax.com/${validLocale}/projects`,
+              url: `https://mujaaco.com/${validLocale}/projects`,
             },
             {
               name: project.title,
-              url: `https://almujax.com/${validLocale}/projects/${slug}`,
+              url: `https://mujaaco.com/${validLocale}/projects/${slug}`,
             },
           ]}
         />

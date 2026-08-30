@@ -113,26 +113,26 @@ export async function generateMetadata({
 
     const title = data.title || slug;
     const description = data.description || "";
-    const image = "https://almujax.com/img/profile-engineer-1200x630.png";
+    const image = "https://mujaaco.com/img/profile-engineer-1200x630.png";
     const publishedTime = data.date;
 
     return {
-      title: `${title} | Almuja (Mujahid Siyam)`,
+      title: `${title} | Mujaa (Mujahid Siyam)`,
       description,
       alternates: {
-        canonical: `https://almujax.com/${validLocale}/blog/${slug}`,
+        canonical: `https://mujaaco.com/${validLocale}/blog/${slug}`,
         languages: {
-          en: `https://almujax.com/en/blog/${slug}`,
-          ar: `https://almujax.com/ar/blog/${slug}`,
-          fr: `https://almujax.com/fr/blog/${slug}`,
-          "x-default": `https://almujax.com/en/blog/${slug}`,
+          en: `https://mujaaco.com/en/blog/${slug}`,
+          ar: `https://mujaaco.com/ar/blog/${slug}`,
+          fr: `https://mujaaco.com/fr/blog/${slug}`,
+          "x-default": `https://mujaaco.com/en/blog/${slug}`,
         },
       },
       openGraph: {
-        title: `${title} | Almuja (Mujahid Siyam)`,
+        title: `${title} | Mujaa (Mujahid Siyam)`,
         description,
         type: "article",
-        url: `https://almujax.com/${validLocale}/blog/${slug}`,
+        url: `https://mujaaco.com/${validLocale}/blog/${slug}`,
         images: [{ url: image, width: 1200, height: 630, alt: title }],
         publishedTime,
         modifiedTime: publishedTime,
@@ -144,8 +144,8 @@ export async function generateMetadata({
         title: `${title} | Mujahid Siyam`,
         description,
         images: [image],
-        site: "@almujax",
-        creator: "@almujax",
+        site: "@mujaaco",
+        creator: "@mujaaco",
       },
       category: data.category || undefined,
       other: {
@@ -159,7 +159,7 @@ export async function generateMetadata({
     return {
       title: slug,
       alternates: {
-        canonical: `https://almujax.com/${validLocale}/blog/${slug}`,
+        canonical: `https://mujaaco.com/${validLocale}/blog/${slug}`,
       },
     };
   }
@@ -219,23 +219,23 @@ export default async function BlogPostPage({
               : new Date().toISOString()
           }
           image={frontmatter.image || ""}
-          url={`https://almujax.com/${validLocale}/blog/${resolvedParams.slug}`}
+          url={`https://mujaaco.com/${validLocale}/blog/${resolvedParams.slug}`}
         />
         <BreadcrumbStructuredData
           items={[
             {
               name: validLocale === "ar" ? "الرئيسية" : "Home",
-              url: `https://almujax.com/${validLocale}`,
+              url: `https://mujaaco.com/${validLocale}`,
             },
             {
               name: dict.blog.title
-                .replace(" | Almuja (Mujahid Siyam)", "")
+                .replace(" | Mujaa (Mujahid Siyam)", "")
                 .replace(/^Blog \| /, ""),
-              url: `https://almujax.com/${validLocale}/blog`,
+              url: `https://mujaaco.com/${validLocale}/blog`,
             },
             {
               name: title,
-              url: `https://almujax.com/${validLocale}/blog/${resolvedParams.slug}`,
+              url: `https://mujaaco.com/${validLocale}/blog/${resolvedParams.slug}`,
             },
           ]}
         />
@@ -343,10 +343,10 @@ export default async function BlogPostPage({
               bio={dict.blog.authorBio}
               aboutLabel={dict.blog.aboutTheAuthor}
               socialLinks={{
-                github: "https://github.com/almujax",
-                twitter: "https://x.com/almujax",
-                linkedin: "https://linkedin.com/in/almujax",
-                website: "https://almujax.com",
+                github: "https://github.com/mujaaco",
+                twitter: "https://x.com/mujaaco",
+                linkedin: "https://linkedin.com/in/mujaaco",
+                website: "https://mujaaco.com",
               }}
             />
           </div>

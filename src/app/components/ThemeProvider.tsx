@@ -10,7 +10,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
       defaultTheme="dark"
       enableSystem
       disableTransitionOnChange
-      storageKey="almuja-theme"
+      storageKey="mujaa-theme"
       {...props}
     >
       {children}

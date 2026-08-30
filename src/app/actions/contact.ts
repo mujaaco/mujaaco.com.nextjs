@@ -40,9 +40,9 @@ export async function submitContactForm(formData: FormData) {
 
     // Get environment variables
     const resendApiKey = process.env.RESEND_API_KEY;
-    // Use hello@almujax.com as the recipient
+    // Use hello@mujaaco.com as the recipient
     // Make sure this email is verified in Resend and not on the suppression list
-    const contactEmail = process.env.CONTACT_EMAIL || "hello@almujax.com";
+    const contactEmail = process.env.CONTACT_EMAIL || "hello@mujaaco.com";
 
     // Log environment status for debugging (only in development)
     if (process.env.NODE_ENV === "development") {
@@ -69,7 +69,7 @@ export async function submitContactForm(formData: FormData) {
       return {
         success: false,
         message:
-          "The contact form is temporarily unavailable due to a configuration issue. Please email me directly at hello@almujax.com or try again later. (Error: RESEND_API_KEY not configured in production environment)",
+          "The contact form is temporarily unavailable due to a configuration issue. Please email me directly at hello@mujaaco.com or try again later. (Error: RESEND_API_KEY not configured in production environment)",
       };
     }
 
@@ -77,10 +77,10 @@ export async function submitContactForm(formData: FormData) {
 
     console.log("Sending email via Resend:", { name, email, subject, message });
 
-    // Use hello@almujax.com as the sender (requires domain verification in Resend)
+    // Use hello@mujaaco.com as the sender (requires domain verification in Resend)
     // If domain is not verified, this will fail
     const { data, error } = await resend.emails.send({
-      from: "Contact Form <hello@almujax.com>",
+      from: "Contact Form <hello@mujaaco.com>",
       to: [contactEmail],
       replyTo: email,
       subject:
@@ -147,7 +147,7 @@ export async function submitContactForm(formData: FormData) {
       ) {
         return {
           success: false,
-          message: `Failed to send email: ${error.message}. This may be because the domain almujax.com needs to be verified in Resend. Please contact me directly at hello@almujax.com for now.`,
+          message: `Failed to send email: ${error.message}. This may be because the domain mujaaco.com needs to be verified in Resend. Please contact me directly at hello@mujaaco.com for now.`,
         };
       }
       // Check if the error is related to suppression list

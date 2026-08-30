@@ -22,13 +22,13 @@ export async function generateMetadata({
     title: t.blog.title,
     description: t.blog.description,
     alternates: {
-      canonical: `https://almujax.com/${validLocale}/blog`,
+      canonical: `https://mujaaco.com/${validLocale}/blog`,
       languages: localeLanguages("blog"),
     },
     openGraph: {
       title: t.blog.title,
       description: t.blog.description,
-      url: `https://almujax.com/${validLocale}/blog`,
+      url: `https://mujaaco.com/${validLocale}/blog`,
       type: "website",
     },
   };

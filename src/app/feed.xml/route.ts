@@ -4,7 +4,7 @@ import matter from "gray-matter";
 
 export async function GET() {
   const blogDirectory = join(process.cwd(), "src", "content", "blog");
-  const baseUrl = "https://almujax.com/en";
+  const baseUrl = "https://mujaaco.com/en";
 
   let posts: Array<{
     slug: string;
@@ -60,13 +60,13 @@ export async function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
   <channel>
-    <title>almujax.com — Mujahid Siyam (Almuja) | راب عربي | Software & AI Engineer</title>
+    <title>mujaaco.com — Mujahid Siyam (Mujaa) | راب عربي | Software & AI Engineer</title>
     <link>${baseUrl}/blog</link>
-    <description>AI engineering, Rust development, DevSecOps, Arabic Rap, Sudanese Rap, software engineering, and creative technology insights by Mujahid Siyam (Almuja / almujax). مدونة تقنية وهندسية.</description>
+    <description>AI engineering, Rust development, DevSecOps, Arabic Rap, Sudanese Rap, software engineering, and creative technology insights by Mujahid Siyam (Mujaa / mujaaco). مدونة تقنية وهندسية.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${baseUrl}/feed.xml" rel="self" type="application/rss+xml"/>
-    <dc:creator>Mujahid Siyam (Almuja / almujax) | مجاهد سيام</dc:creator>
+    <dc:creator>Mujahid Siyam (Mujaa / mujaaco) | مجاهد سيام</dc:creator>
     <geo:lat>46.603354</geo:lat>
     <geo:long>1.888334</geo:long>
 ${rssItems}

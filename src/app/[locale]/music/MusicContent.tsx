@@ -101,25 +101,25 @@ const streamingPlatforms = [
   {
     name: "Apple Music",
     icon: AppleMusicIcon,
-    url: "https://music.apple.com/fr/artist/almuja/6800033494",
+    url: "https://music.apple.com/fr/artist/mujaa/6800033494",
     color: "#FA243C",
   },
   {
     name: "YouTube",
     icon: YouTubeIcon,
-    url: "https://www.youtube.com/@AlmujaMusic",
+    url: "https://www.youtube.com/@MujaaMusic",
     color: "#FF0000",
   },
   {
     name: "YouTube Music",
     icon: YouTubeIcon,
-    url: "https://music.youtube.com/@AlmujaMusic",
+    url: "https://music.youtube.com/@MujaaMusic",
     color: "#FF0000",
   },
   {
     name: "SoundCloud",
     icon: SoundCloudIcon,
-    url: "https://soundcloud.com/almujax",
+    url: "https://soundcloud.com/mujaaco",
     color: "#FF5500",
   },
   {
@@ -143,7 +143,7 @@ const streamingPlatforms = [
   {
     name: "Bandcamp",
     icon: BandcampIcon,
-    url: "https://almujax.bandcamp.com",
+    url: "https://mujaaco.bandcamp.com",
     color: "#408294",
   },
   {
@@ -292,7 +292,7 @@ export function MusicContent({ locale, t }: MusicContentProps) {
               </div>
               <div>
                 <h3 className="text-sm font-bold text-foreground">Spotify</h3>
-                <p className="text-[11px] text-foreground/40">Almuja</p>
+                <p className="text-[11px] text-foreground/40">Mujaa</p>
               </div>
               <a
                 href="https://open.spotify.com/artist/24n3um6erIOUxobs69qDPX"
@@ -331,10 +331,10 @@ export function MusicContent({ locale, t }: MusicContentProps) {
                 <h3 className="text-sm font-bold text-foreground">
                   Apple Music
                 </h3>
-                <p className="text-[11px] text-foreground/40">Almuja</p>
+                <p className="text-[11px] text-foreground/40">Mujaa</p>
               </div>
               <a
-                href="https://music.apple.com/fr/artist/almuja/6800033494"
+                href="https://music.apple.com/fr/artist/mujaa/6800033494"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="ms-auto flex items-center gap-1 text-xs text-[#FA243C] hover:underline font-medium"
@@ -357,7 +357,7 @@ export function MusicContent({ locale, t }: MusicContentProps) {
                   borderRadius: "12px",
                 }}
                 sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-                src="https://embed.music.apple.com/fr/artist/almuja/6800033494"
+                src="https://embed.music.apple.com/fr/artist/mujaa/6800033494"
                 title="Apple Music Player"
               />
             </div>
@@ -432,14 +432,14 @@ export function MusicContent({ locale, t }: MusicContentProps) {
                     {locale === "ar"
                       ? "أول EP لموجا — بداية جديدة في مسيرته الفنية"
                       : locale === "fr"
-                        ? "Premier EP d'Almuja — un nouveau départ artistique"
-                        : "Almuja's debut EP — marking the beginning of his return to music"}
+                        ? "Premier EP de Mujaa — un nouveau départ artistique"
+                        : "Mujaa's debut EP — marking the beginning of his return to music"}
                   </p>
                   <div className="flex flex-wrap gap-2.5">
                     {[
                       {
                         label: locale === "ar" ? "يوتيوب" : "YouTube",
-                        url: "https://www.youtube.com/@AlmujaMusic",
+                        url: "https://www.youtube.com/@MujaaMusic",
                         icon: YouTubeIcon,
                         color: "#FF0000",
                       },
@@ -494,8 +494,8 @@ export function MusicContent({ locale, t }: MusicContentProps) {
                     {locale === "ar"
                       ? "EP الثاني لموجا — فصل جديد، صوت أكبر، تعبير أعمق. يصدر قريباً."
                       : locale === "fr"
-                        ? "Le deuxième EP d'Almuja — un nouveau chapitre, un son plus grand, une expression plus profonde. Sortie prochaine."
-                        : "Almuja's second EP — the next chapter. Bigger sound, deeper expression. Releasing soon."}
+                        ? "Le deuxième EP de Mujaa — un nouveau chapitre, un son plus grand, une expression plus profonde. Sortie prochaine."
+                        : "Mujaa's second EP — the next chapter. Bigger sound, deeper expression. Releasing soon."}
                   </p>
                   <div className="flex flex-wrap gap-2.5 mb-4">
                     {[
@@ -507,19 +507,19 @@ export function MusicContent({ locale, t }: MusicContentProps) {
                       },
                       {
                         label: locale === "ar" ? "أبل ميوزك" : "Apple Music",
-                        url: "https://music.apple.com/fr/artist/almuja/6800033494",
+                        url: "https://music.apple.com/fr/artist/mujaa/6800033494",
                         icon: AppleMusicIcon,
                         color: "#FA243C",
                       },
                       {
                         label: locale === "ar" ? "ساوند كلاود" : "SoundCloud",
-                        url: "https://soundcloud.com/almujax",
+                        url: "https://soundcloud.com/mujaaco",
                         icon: SoundCloudIcon,
                         color: "#FF5500",
                       },
                       {
                         label: locale === "ar" ? "يوتيوب" : "YouTube",
-                        url: "https://www.youtube.com/@AlmujaMusic",
+                        url: "https://www.youtube.com/@MujaaMusic",
                         icon: YouTubeIcon,
                         color: "#FF0000",
                       },
@@ -609,11 +609,11 @@ export function MusicContent({ locale, t }: MusicContentProps) {
                         ? "Rockstar — Audio Officiel"
                         : "Rockstar — Official Audio"}
                   </h3>
-                  <p className="text-sm text-foreground/40">@AlmujaMusic</p>
+                  <p className="text-sm text-foreground/40">@MujaaMusic</p>
                 </div>
                 <div className="flex items-center gap-3">
                   <a
-                    href="https://www.youtube.com/@AlmujaMusic"
+                    href="https://www.youtube.com/@MujaaMusic"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500/20 hover:text-red-300 font-medium text-sm transition-all duration-300 hover:scale-[1.02]"
@@ -657,10 +657,10 @@ export function MusicContent({ locale, t }: MusicContentProps) {
                   <h3 className="text-lg font-bold text-foreground">
                     YouTube Music
                   </h3>
-                  <p className="text-sm text-foreground/40">@AlmujaMusic</p>
+                  <p className="text-sm text-foreground/40">@MujaaMusic</p>
                 </div>
                 <a
-                  href="https://music.youtube.com/@AlmujaMusic"
+                  href="https://music.youtube.com/@MujaaMusic"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ms-auto inline-flex items-center gap-1.5 text-sm text-red-400 hover:text-red-300 font-medium transition-colors"

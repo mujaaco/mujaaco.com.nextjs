@@ -1,11 +1,11 @@
 const en = {
   site: {
     title:
-      "Almuja (Mujahid Siyam) — Software Engineer, Network Engineer, AI Cloud Architect, Data Scientist, Systems Administrator (Linux & Windows), Rapper, Music Producer & Content Creator",
+      "Mujaa (Mujahid Siyam) — Software Engineer, Network Engineer, AI Cloud Architect, Data Scientist, Systems Administrator (Linux & Windows), Rapper, Music Producer & Content Creator",
     description:
-      "Mujahid Siyam, known as Almuja (موجا, derived from الموجة/الموجه — the wave) and handle almujax online — software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux and Windows), rapper, music producer, and content creator based in Paris, France. Personal website with projects, writing, and music.",
+      "Mujahid Siyam, known as Mujaa (موجا, derived from الموجة/الموجه — the wave) and handle mujaaco online — software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux and Windows), rapper, music producer, and content creator based in Paris, France. Personal website with projects, writing, and music.",
     defaultTitle:
-      "Almuja (Mujahid Siyam) — Software Engineer, Network Engineer, AI Cloud Architect, Data Scientist, Systems Administrator (Linux & Windows), Rapper, Music Producer & Content Creator",
+      "Mujaa (Mujahid Siyam) — Software Engineer, Network Engineer, AI Cloud Architect, Data Scientist, Systems Administrator (Linux & Windows), Rapper, Music Producer & Content Creator",
   },
   nav: {
     projects: "Projects",
@@ -21,9 +21,9 @@ const en = {
   },
   home: {
     title:
-      "Almuja (Mujahid Siyam) — Software, Network, AI & Systems Engineer · Rapper · Content Creator | almujax",
+      "Mujaa (Mujahid Siyam) — Software, Network, AI & Systems Engineer · Rapper · Content Creator | mujaaco",
     description:
-      "Mujahid Siyam (almujax) is a software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, music producer, and content creator born in Sudan, based in Paris, France. He builds systems, writes code, manages infrastructure, and makes music.",
+      "Mujahid Siyam (mujaaco) is a software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, music producer, and content creator born in Sudan, based in Paris, France. He builds systems, writes code, manages infrastructure, and makes music.",
     sparkle: "Building systems and making music",
     roles:
       "Software Engineer · Network Engineer · AI Cloud Architect · Data Scientist · System Administrator (Linux & Windows) · Rapper · Music Producer · Content Creator",
@@ -113,9 +113,9 @@ const en = {
     },
     exploreProjects: "Explore Projects",
     readBlog: "Read Blog",
-    aboutHeading: "About Almuja (Mujahid Siyam)",
+    aboutHeading: "About Mujaa (Mujahid Siyam)",
     about1:
-      "Almuja (موجا) is the name I carry online — short, warm, easy to say. It comes from the Arabic word for \"the wave\" (الموجة / الموجه) — movement, signal, flow. I chose it because it's simple, musical, and memorable. My real name is Mujahid Siyam, and my handle everywhere is almujax. I'm a Sudanese software engineer, network engineer, AI cloud architect, data scientist, system administrator — Linux and Windows — rapper, and hip-hop producer, born in Sudan and living in Paris, France.",
+      "Mujaa (موجا) is the name I carry online — short, warm, easy to say. It comes from the Arabic word for \"the wave\" (الموجة / الموجه) — movement, signal, flow. I chose it because it's simple, musical, and memorable. My real name is Mujahid Siyam, and my handle everywhere is mujaaco. I'm a Sudanese software engineer, network engineer, AI cloud architect, data scientist, system administrator — Linux and Windows — rapper, and hip-hop producer, born in Sudan and living in Paris, France.",
     about2:
       "I started with music before I ever wrote a line of code. At 16, I was forming bands in Sudan, recording tracks, performing wherever I could. Music taught me how to build something from nothing — an idea becomes a sound, a sound becomes a performance, a performance connects with people. That creative instinct never left me. I carried it into engineering later on, where I found the same cycle: imagine, build, refine, ship.",
     about3:
@@ -134,17 +134,17 @@ const en = {
   },
   about: {
     title:
-      "About | Mujahid Siyam (Almuja / almujax) — Software Engineer, Network Engineer, AI Cloud Architect, Data Scientist, Systems Administrator & Music Artist",
+      "About | Mujahid Siyam (Mujaa / mujaaco) — Software Engineer, Network Engineer, AI Cloud Architect, Data Scientist, Systems Administrator & Music Artist",
     description:
-      "Mujahid Siyam (Almuja / almujax) is a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, and hip-hop producer based in Paris, France. Explore his professional profile, experience, skills, and story.",
+      "Mujahid Siyam (Mujaa / mujaaco) is a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, and hip-hop producer based in Paris, France. Explore his professional profile, experience, skills, and story.",
     heading: "About Mujahid Siyam",
     roles:
       "Software Engineer · Network Engineer · AI Cloud Architect · Data Scientist · System Administrator (Linux & Windows) · Rapper · Music Producer · Content Creator",
     profileTitle: "Software & AI Engineer · Music Artist",
-    akaLabel: "AKA Almuja (موجا)",
+    akaLabel: "AKA Mujaa (موجا)",
     location: "Paris, France",
-    email: "hello@almujax.com",
-    website: "almujax.com",
+    email: "hello@mujaaco.com",
+    website: "mujaaco.com",
     coreCompetencies: "Core Expertise",
     languages: "Languages",
     experience: "Professional Experience",
@@ -161,10 +161,10 @@ const en = {
     summary3:
       "Today, I'm a senior-level engineer comfortable across the full technology stack. I write production code in Rust, TypeScript, and Python. I design and deploy infrastructure using Terraform, Ansible, Docker, and Kubernetes on AWS. I administer Linux servers (Ubuntu, Debian, Arch, NixOS) and Windows Server environments. I work with databases like PostgreSQL, MySQL, MongoDB, and Redis — optimizing queries, designing schemas, and setting up replication and backup strategies. I build CI/CD pipelines, implement security scanning in development workflows, and monitor production systems with Prometheus and Grafana. I understand networking from the OSI model down to BGP and OSPF configuration. And I'm comfortable with the full ML lifecycle — training models, deploying them, building RAG systems, and working with LLM architectures.",
     summary4:
-      "In 2022, after years away from music, I returned to the studio. I produced KAKASHI, my debut EP under the name Almuja — Arabic rap, Sudanese rap, hip hop. It wasn't a career pivot. It was me reconnecting with something I'd left behind and realizing I didn't have to choose between being an engineer and being an artist. The two inform each other. Engineering rigor keeps me grounded. Creative work keeps me inspired. My next EP, Rockstar, is set for release in August 2026.",
+      "In 2022, after years away from music, I returned to the studio. I produced KAKASHI, my debut EP under the name Mujaa — Arabic rap, Sudanese rap, hip hop. It wasn't a career pivot. It was me reconnecting with something I'd left behind and realizing I didn't have to choose between being an engineer and being an artist. The two inform each other. Engineering rigor keeps me grounded. Creative work keeps me inspired. My next EP, Rockstar, is set for release in August 2026.",
     summary5:
       "I currently operate through Zaroxi Studio — my company for software development, AI engineering, developer tools, and consulting. I'm open to contract work, collaboration on interesting projects, and opportunities where deep technical skill meets real-world impact. If you need someone who can architect a system, write the code, secure the deployment, and debug the production outage at 3 AM — all without making things more complicated than they need to be — we should talk.",
-    connectHeading: "Find Almuja online",
+    connectHeading: "Find Mujaa online",
     connectDescription:
       "GitHub, social media, streaming platforms — wherever you prefer",
     education: "Education",
@@ -240,9 +240,9 @@ const en = {
     ],
   },
   blog: {
-    title: "Blog | Almuja (Mujahid Siyam) — Software, AI & Systems Engineering",
+    title: "Blog | Mujaa (Mujahid Siyam) — Software, AI & Systems Engineering",
     description:
-      "Articles by Mujahid Siyam (Almuja / almujax) about software engineering, AI, Rust, DevSecOps, cloud infrastructure, networking, systems administration, and creative technology. Real writing from a real person.",
+      "Articles by Mujahid Siyam (Mujaa / mujaaco) about software engineering, AI, Rust, DevSecOps, cloud infrastructure, networking, systems administration, and creative technology. Real writing from a real person.",
     backToBlog: "Back to Blog",
     previous: "Previous",
     next: "Next",
@@ -283,9 +283,9 @@ const en = {
     browsePosts: "Browse posts",
   },
   projects: {
-    title: "Projects | Almuja (Mujahid Siyam) — Open Source & Developer Tools",
+    title: "Projects | Mujaa (Mujahid Siyam) — Open Source & Developer Tools",
     description:
-      "Open source projects and contributions by Mujahid Siyam (Almuja / almujax). Developer tools, NixOS configurations, AI utilities, infrastructure automation, systems administration tools, and creative experiments.",
+      "Open source projects and contributions by Mujahid Siyam (Mujaa / mujaaco). Developer tools, NixOS configurations, AI utilities, infrastructure automation, systems administration tools, and creative experiments.",
     backToProjects: "Back to Projects",
     viewOnGithub: "View on GitHub",
     visitWebsite: "Visit Website",
@@ -310,27 +310,27 @@ const en = {
   },
   music: {
     title:
-      "Music | Almuja | Arabic Rap | Sudanese Rap | Middle Eastern Hip Hop | African Rap",
+      "Music | Mujaa | Arabic Rap | Sudanese Rap | Middle Eastern Hip Hop | African Rap",
     description:
-      "Almuja (موجا) is the artist name of Mujahid Siyam (handle: almujax). Sudanese rapper and hip-hop producer creating Arabic, Middle Eastern, and African rap. Listen to KAKASHI EP (2022). Rockstar EP coming August 2026. Follow for upcoming releases.",
-    heading: "Almuja — Music",
+      "Mujaa (موجا) is the artist name of Mujahid Siyam (handle: mujaaco). Sudanese rapper and hip-hop producer creating Arabic, Middle Eastern, and African rap. Listen to KAKASHI EP (2022). Rockstar EP coming August 2026. Follow for upcoming releases.",
+    heading: "Mujaa — Music",
     subtitle:
-      "Music under the name Almuja (موجا). Arabic, Middle Eastern, and African rap and hip-hop. Sudanese rap and original productions. KAKASHI EP out now. Rockstar EP coming August 2026.",
+      "Music under the name Mujaa (موجا). Arabic, Middle Eastern, and African rap and hip-hop. Sudanese rap and original productions. KAKASHI EP out now. Rockstar EP coming August 2026.",
     noPlaylists: "No releases at the moment. Stay tuned for upcoming music.",
     loading: "Loading...",
     listenOn: "Listen on",
     tracks: "tracks",
     openInApp: "Open in",
-    artistName: "Almuja",
+    artistName: "Mujaa",
     artistDescription:
-      'Almuja (موجا) is the artist name of Mujahid Siyam. The name is derived from the Arabic word الموجة, meaning "the wave."',
+      'Mujaa (موجا) is the artist name of Mujahid Siyam. The name is derived from the Arabic word الموجة, meaning "the wave."',
     artistStory:
-      "I started making music when I was 16, long before I wrote a line of code. Growing up in Sudan, music was everywhere — and I wanted to be part of it. I formed bands, wrote lyrics, recorded wherever I could, and performed in front of anyone who would listen. Music was my first language for building things: you start with an idea, you shape it, you refine it, and then you put it out there and see how people respond.\n\nWhen I moved to France, I stepped away from music to focus on software engineering. For years, code replaced everything. I built systems, managed infrastructure, worked on AI projects. It was demanding and rewarding, but something was missing. In 2022, after a long silence, I went back to the studio. I produced my first EP — KAKASHI — under the name Almuja. It was raw, honest, and exactly what I needed to make. It wasn't a comeback strategy. It was me remembering who I was before I became an engineer.\n\nNow I'm working on my next EP, Rockstar, set for release in August 2026. It's the next chapter — bigger, more focused, and a deeper expression of where I am now. Music is not a side project. It's part of my identity, the same way engineering is. If you've listened to KAKASHI, you already know the sound. If you haven't, now's a good time.\n\nI make Arabic rap and Sudanese rap, with hip hop production that draws from both my roots and my life in Europe. The music is personal. It's about identity, displacement, ambition, and the tension between who you were and who you're becoming. If that resonates with you, I think you'll like what's coming.",
+      "I started making music when I was 16, long before I wrote a line of code. Growing up in Sudan, music was everywhere — and I wanted to be part of it. I formed bands, wrote lyrics, recorded wherever I could, and performed in front of anyone who would listen. Music was my first language for building things: you start with an idea, you shape it, you refine it, and then you put it out there and see how people respond.\n\nWhen I moved to France, I stepped away from music to focus on software engineering. For years, code replaced everything. I built systems, managed infrastructure, worked on AI projects. It was demanding and rewarding, but something was missing. In 2022, after a long silence, I went back to the studio. I produced my first EP — KAKASHI — under the name Mujaa. It was raw, honest, and exactly what I needed to make. It wasn't a comeback strategy. It was me remembering who I was before I became an engineer.\n\nNow I'm working on my next EP, Rockstar, set for release in August 2026. It's the next chapter — bigger, more focused, and a deeper expression of where I am now. Music is not a side project. It's part of my identity, the same way engineering is. If you've listened to KAKASHI, you already know the sound. If you haven't, now's a good time.\n\nI make Arabic rap and Sudanese rap, with hip hop production that draws from both my roots and my life in Europe. The music is personal. It's about identity, displacement, ambition, and the tension between who you were and who you're becoming. If that resonates with you, I think you'll like what's coming.",
   },
   contact: {
-    title: "Contact | Mujahid Siyam (Almuja / almujax) — Get in Touch",
+    title: "Contact | Mujahid Siyam (Mujaa / mujaaco) — Get in Touch",
     description:
-      "Get in touch with Mujahid Siyam (Almuja / almujax), a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator, rapper, and hip-hop producer based in Paris, France. Engineering collaboration, AI projects, infrastructure consulting, music inquiries — or just a warm hello.",
+      "Get in touch with Mujahid Siyam (Mujaa / mujaaco), a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator, rapper, and hip-hop producer based in Paris, France. Engineering collaboration, AI projects, infrastructure consulting, music inquiries — or just a warm hello.",
     heading: "Get in touch",
     subtitle:
       "Have a project, a question, or just want to connect? I read every message and reply to the real ones. Let's talk.",
@@ -365,7 +365,7 @@ const en = {
     sending: "Sending...",
     sendMessage: "Send message",
     networkError:
-      "Something went wrong. Please try again or email me directly at hello@almujax.com.",
+      "Something went wrong. Please try again or email me directly at hello@mujaaco.com.",
   },
   footer: {
     connect: "Let's Connect",
@@ -387,27 +387,27 @@ const en = {
     tagline:
       "Building software, systems, and music. Software & network engineer, AI cloud architect, data scientist, sysadmin (Linux & Windows), rapper, and creator. Based in Paris, France, working worldwide.",
     errorMessage:
-      "Something went wrong. Please try again or email me at hello@almujax.com.",
+      "Something went wrong. Please try again or email me at hello@mujaaco.com.",
   },
   structuredData: {
     description:
-      "Mujahid Siyam, known as Almuja (موجا, derived from الموجة/الموجه — Arabic for 'the wave'), with the handle almujax, is a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux and Windows), rapper, music producer, and content creator born in Sudan and based in Paris, France. He started making music at age 16, forming bands and performing before transitioning into software engineering, cloud architecture, and AI. He builds production systems with Rust, TypeScript, and Python, manages infrastructure with Terraform, Ansible, Docker, and Kubernetes on AWS, and administers Linux and Windows servers. In 2022 he returned to music, releasing his debut EP KAKASHI under the name Almuja. His next EP Rockstar is scheduled for August 2026. His music spans Arabic, Middle Eastern, and African rap and hip-hop, blending Sudanese roots with European life. He is the founder of Zaroxi Studio, a GPU-accelerated IDE written in Rust, and the creator of MujaOS. He bridges engineering and music from Paris, France. Contact: hello@almujax.com.",
+      "Mujahid Siyam, known as Mujaa (موجا, derived from الموجة/الموجه — Arabic for 'the wave'), with the handle mujaaco, is a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux and Windows), rapper, music producer, and content creator born in Sudan and based in Paris, France. He started making music at age 16, forming bands and performing before transitioning into software engineering, cloud architecture, and AI. He builds production systems with Rust, TypeScript, and Python, manages infrastructure with Terraform, Ansible, Docker, and Kubernetes on AWS, and administers Linux and Windows servers. In 2022 he returned to music, releasing his debut EP KAKASHI under the name Mujaa. His next EP Rockstar is scheduled for August 2026. His music spans Arabic, Middle Eastern, and African rap and hip-hop, blending Sudanese roots with European life. He is the founder of Zaroxi Studio, a GPU-accelerated IDE written in Rust, and the creator of MujaOS. He bridges engineering and music from Paris, France. Contact: hello@mujaaco.com.",
     websiteDescription:
-      "Official personal website of Mujahid Siyam (Almuja / almujax) — Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, and music artist born in Sudan, based in Paris, France. Started music at 16, built a career in engineering and cloud infrastructure, returned to music in 2022 with KAKASHI EP. Rockstar EP coming August 2026. Founder of Zaroxi Studio (zaroxi.com). Projects, writing, and original Arabic, Middle Eastern, and African rap.",
+      "Official personal website of Mujahid Siyam (Mujaa / mujaaco) — Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, and music artist born in Sudan, based in Paris, France. Started music at 16, built a career in engineering and cloud infrastructure, returned to music in 2022 with KAKASHI EP. Rockstar EP coming August 2026. Founder of Zaroxi Studio (zaroxi.com). Projects, writing, and original Arabic, Middle Eastern, and African rap.",
   },
   seo: {
     keywords: [
       "Mujahid Siyam",
-      "Almuja",
-      "almujax",
+      "Mujaa",
+      "mujaaco",
       "موجا",
       "الموجة",
       "الموجه",
       "Mujahid Siyam rapper",
       "Mujahid Siyam music",
-      "Almuja rapper",
-      "Almuja music",
-      "almujax rapper",
+      "Mujaa rapper",
+      "Mujaa music",
+      "mujaaco rapper",
       "Mujahid Siyam Paris",
       "Mujahid Siyam Sudan",
       "Mujahid Siyam France",
@@ -415,28 +415,28 @@ const en = {
       "Mujahid Siyam portfolio",
       "Mujahid Siyam contact",
       "Mujahid Siyam blog",
-      "Almuja Paris rapper",
+      "Mujaa Paris rapper",
       "Sudanese engineer Paris",
       "Sudanese rapper France",
-      "Almuja engineer",
-      "Almuja artist",
-      "Almuja developer",
-      "Almuja creative",
-      "Almuja engineer and artist",
-      "Almuja software and music",
+      "Mujaa engineer",
+      "Mujaa artist",
+      "Mujaa developer",
+      "Mujaa creative",
+      "Mujaa engineer and artist",
+      "Mujaa software and music",
       "engineer who raps",
       "musician who codes",
-      "Almuja personal site",
-      "Almuja official website",
-      "Almuja portfolio site",
-      "Almuja from Sudan",
-      "Almuja based in Paris",
-      "Almuja Sudanese artist",
+      "Mujaa personal site",
+      "Mujaa official website",
+      "Mujaa portfolio site",
+      "Mujaa from Sudan",
+      "Mujaa based in Paris",
+      "Mujaa Sudanese artist",
       "Sudanese talent France",
-      "Almuja new EP",
-      "Almuja upcoming music",
-      "Almuja 2026",
-      "Almuja latest",
+      "Mujaa new EP",
+      "Mujaa upcoming music",
+      "Mujaa 2026",
+      "Mujaa latest",
       "Rapper",
       "Hip Hop Producer",
       "Rap Producer",
@@ -486,18 +486,18 @@ const en = {
       "Hip Hop",
       "KAKASHI EP",
       "Rockstar EP",
-      "Almuja music",
-      "Almuja hip hop",
-      "Almuja electronic music",
-      "Almuja rap artist",
+      "Mujaa music",
+      "Mujaa hip hop",
+      "Mujaa electronic music",
+      "Mujaa rap artist",
       "Sudanese music artist",
-      "Almuja Spotify",
-      "Almuja SoundCloud",
-      "Almuja Apple Music",
-      "Almuja YouTube",
-      "Almuja TikTok",
-      "Almuja Deezer",
-      "Almuja Anghami",
+      "Mujaa Spotify",
+      "Mujaa SoundCloud",
+      "Mujaa Apple Music",
+      "Mujaa YouTube",
+      "Mujaa TikTok",
+      "Mujaa Deezer",
+      "Mujaa Anghami",
       "موجا",
       "الموجة",
       "الموجه",
@@ -538,17 +538,17 @@ const en = {
       "Sudan",
       "Sudanese",
       "Paris France",
-      "Almuja GitHub",
-      "Almuja LinkedIn",
-      "Almuja blog",
-      "Almuja projects",
+      "Mujaa GitHub",
+      "Mujaa LinkedIn",
+      "Mujaa blog",
+      "Mujaa projects",
       "Sudanese creative",
       "African engineer Paris",
       "MENA tech talent",
-      "almujax",
-      "almujax.com",
-      "almuja stage name",
-      "almujax handle",
+      "mujaaco",
+      "mujaaco.com",
+      "mujaa stage name",
+      "mujaaco handle",
       "new things engineer Paris",
       "engineer artist Paris",
       "multi-disciplinary engineer",
@@ -572,42 +572,42 @@ const en = {
       "Mujahid Siyam cloud architect",
     ],
     dcSubject:
-      "New Things Engineering, Software Engineering, Artificial Intelligence, AI Engineer, Cloud Architecture, Rust Developer, Network Engineering, Systems Administration, Linux, Windows Server, Data Science, Data Analysis, NixOS, Rapper, Hip Hop Producer, Rap Artist, Music Artist, Content Creator, Arabic Rap, Middle Eastern Rap, Sudanese Rap, African Rap, Sudanese Hip Hop, Arabic Hip Hop, Underground Rap, Independent Artist, Music Producer, Almuja, موجا, الموجة, الموجه, engineer and artist, creative technologist, new things builder, almujax",
+      "New Things Engineering, Software Engineering, Artificial Intelligence, AI Engineer, Cloud Architecture, Rust Developer, Network Engineering, Systems Administration, Linux, Windows Server, Data Science, Data Analysis, NixOS, Rapper, Hip Hop Producer, Rap Artist, Music Artist, Content Creator, Arabic Rap, Middle Eastern Rap, Sudanese Rap, African Rap, Sudanese Hip Hop, Arabic Hip Hop, Underground Rap, Independent Artist, Music Producer, Mujaa, موجا, الموجة, الموجه, engineer and artist, creative technologist, new things builder, mujaaco",
   },
   faq: {
     heading: "Frequently Asked Questions",
     items: [
       {
         q: "Who is Mujahid Siyam?",
-        a: "Mujahid Siyam — also known as Almuja (موجا, derived from الموجة/الموجه), with the handle almujax — is a Sudanese new things engineer, AI cloud architect, rapper, and hip-hop producer based in Paris, France. He is the founder of Zaroxi Studio (zaroxi.com), a GPU-accelerated IDE written in Rust. His work spans building new technologies, AI systems, and creating Arabic, Middle Eastern, and African rap music.",
+        a: "Mujahid Siyam — also known as Mujaa (موجا, derived from الموجة/الموجه), with the handle mujaaco — is a Sudanese new things engineer, AI cloud architect, rapper, and hip-hop producer based in Paris, France. He is the founder of Zaroxi Studio (zaroxi.com), a GPU-accelerated IDE written in Rust. His work spans building new technologies, AI systems, and creating Arabic, Middle Eastern, and African rap music.",
       },
       {
-        q: "Who is Almuja?",
-        a: "Almuja is the artist name and online alias of Mujahid Siyam (handle: almujax). Short, musical, and inspired by the Arabic word for \"the wave\" (الموجة / الموجه) — representing movement, flow, and signal. His artist name is spelled موجا, while the word itself means 'the wave' in Arabic. Almuja represents his identity as a Sudanese rapper and hip-hop producer creating Arabic, Middle Eastern, and African rap. He released his debut EP KAKASHI in 2022, and his next EP Rockstar is set for release in August 2026.",
+        q: "Who is Mujaa?",
+        a: "Mujaa is the artist name and online alias of Mujahid Siyam (handle: mujaaco). Short, musical, and inspired by the Arabic word for \"the wave\" (الموجة / الموجه) — representing movement, flow, and signal. His artist name is spelled موجا, while the word itself means 'the wave' in Arabic. Mujaa represents his identity as a Sudanese rapper and hip-hop producer creating Arabic, Middle Eastern, and African rap. He released his debut EP KAKASHI in 2022, and his next EP Rockstar is set for release in August 2026.",
       },
       {
-        q: "What is almujax?",
-        a: "almujax is the universal handle of Mujahid Siyam (also known as Almuja) — used across all platforms like GitHub, LinkedIn, Instagram, YouTube, and X (Twitter). The name is Almuja, and the real name is Mujahid Siyam.",
+        q: "What is mujaaco?",
+        a: "mujaaco is the universal handle of Mujahid Siyam (also known as Mujaa) — used across all platforms like GitHub, LinkedIn, Instagram, YouTube, and X (Twitter). The name is Mujaa, and the real name is Mujahid Siyam.",
       },
       {
         q: "What is Zaroxi Studio?",
-        a: "Zaroxi Studio is an AI-first, GPU-accelerated IDE written in Rust, founded by Mujahid Siyam (Almuja / almujax). It is also the name of his software development company, through which he builds developer tools, manages infrastructure, and provides engineering consulting. Visit zaroxi.com for more information.",
+        a: "Zaroxi Studio is an AI-first, GPU-accelerated IDE written in Rust, founded by Mujahid Siyam (Mujaa / mujaaco). It is also the name of his software development company, through which he builds developer tools, manages infrastructure, and provides engineering consulting. Visit zaroxi.com for more information.",
       },
       {
-        q: "What kind of music does Almuja make?",
-        a: "Almuja (Mujahid Siyam / almujax) makes Arabic rap, Middle Eastern rap, Sudanese rap, and African rap with hip-hop production. His sound blends his Sudanese roots with his life in Europe, creating music about identity, displacement, ambition, and the tension between who you were and who you are becoming. His debut EP KAKASHI dropped in 2022, and his next EP Rockstar is coming in August 2026.",
+        q: "What kind of music does Mujaa make?",
+        a: "Mujaa (Mujahid Siyam / mujaaco) makes Arabic rap, Middle Eastern rap, Sudanese rap, and African rap with hip-hop production. His sound blends his Sudanese roots with his life in Europe, creating music about identity, displacement, ambition, and the tension between who you were and who you are becoming. His debut EP KAKASHI dropped in 2022, and his next EP Rockstar is coming in August 2026.",
       },
       {
-        q: "Where can I listen to Almuja's music?",
-        a: "You can listen to Almuja (Mujahid Siyam / almujax) on Spotify, Apple Music, SoundCloud, YouTube, YouTube Music, Deezer, Anghami, Tidal, and Bandcamp. Find all streaming links at almujax.com/music. His debut EP KAKASHI (2022) is available now, and Rockstar EP drops August 2026.",
+        q: "Where can I listen to Mujaa's music?",
+        a: "You can listen to Mujaa (Mujahid Siyam / mujaaco) on Spotify, Apple Music, SoundCloud, YouTube, YouTube Music, Deezer, Anghami, Tidal, and Bandcamp. Find all streaming links at mujaaco.com/music. His debut EP KAKASHI (2022) is available now, and Rockstar EP drops August 2026.",
       },
       {
         q: "Is Mujahid Siyam available for hire or collaboration?",
-        a: "Yes — Mujahid Siyam (Almuja / almujax) is open to new things engineering, AI consulting, cloud architecture, and music production collaborations. Reach out at hello@almujax.com for building new things, creative partnerships, or just a warm conversation.",
+        a: "Yes — Mujahid Siyam (Mujaa / mujaaco) is open to new things engineering, AI consulting, cloud architecture, and music production collaborations. Reach out at hello@mujaaco.com for building new things, creative partnerships, or just a warm conversation.",
       },
       {
         q: "Where is Mujahid Siyam based?",
-        a: "Mujahid Siyam (Almuja / almujax) was born in Sudan and is currently based in Paris, France. He works globally with clients and collaborators across Europe, the Middle East, Africa, and beyond, bridging both engineering and music from Paris.",
+        a: "Mujahid Siyam (Mujaa / mujaaco) was born in Sudan and is currently based in Paris, France. He works globally with clients and collaborators across Europe, the Middle East, Africa, and beyond, bridging both engineering and music from Paris.",
       },
     ],
   },

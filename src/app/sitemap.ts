@@ -3,7 +3,7 @@ import { join } from "node:path";
 import matter from "gray-matter";
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://almujax.com";
+const baseUrl = "https://mujaaco.com";
 const locales = ["en", "ar", "fr"];
 
 function toAbsoluteImage(image: string | undefined): string | undefined {

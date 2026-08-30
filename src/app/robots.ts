@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/", "/theme-test/"],
       },
     ],
-    sitemap: ["https://almujax.com/sitemap-index.xml"],
+    sitemap: ["https://mujaaco.com/sitemap-index.xml"],
   };
 }

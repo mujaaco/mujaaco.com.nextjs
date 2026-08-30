@@ -100,7 +100,7 @@ async function fetchWithFallback(
 
 const getCachedSearchResults = unstable_cache(
   async (query: string) => {
-    const baseUrl = process.env.NEXTAUTH_URL || "https://almujax.com";
+    const baseUrl = process.env.NEXTAUTH_URL || "https://mujaaco.com";
 
     // Use relative URLs to avoid external requests
     const [blogPosts, projects] = await Promise.all([

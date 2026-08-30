@@ -81,7 +81,7 @@ export default function Footer({
             className="border-primary/20 hover:border-primary/40 hover:bg-primary/[0.04] transition-all duration-500 px-8 py-6 h-auto rounded-2xl group shadow-sm hover:shadow-lg hover:shadow-primary/5"
           >
             <a
-              href="mailto:hello@almujax.com"
+              href="mailto:hello@mujaaco.com"
               className="inline-flex items-center gap-3 text-sm font-semibold"
             >
               <Mail className="w-4 h-4 text-primary/50 group-hover:text-primary transition-colors" />
@@ -148,7 +148,7 @@ export default function Footer({
               {[
                 {
                   l: "GH",
-                  h: "https://github.com/almujax",
+                  h: "https://github.com/mujaaco",
                   i: (
                     <svg
                       className="w-4 h-4"
@@ -161,7 +161,7 @@ export default function Footer({
                 },
                 {
                   l: "LI",
-                  h: "https://linkedin.com/in/almujax",
+                  h: "https://linkedin.com/in/mujaaco",
                   i: (
                     <svg
                       className="w-4 h-4"
@@ -174,7 +174,7 @@ export default function Footer({
                 },
                 {
                   l: "@",
-                  h: "mailto:hello@almujax.com",
+                  h: "mailto:hello@mujaaco.com",
                   i: (
                     <svg
                       className="w-4 h-4"

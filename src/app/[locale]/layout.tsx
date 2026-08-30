@@ -20,11 +20,11 @@ export async function generateMetadata({
       template:
         validLocale === "ar"
           ? `%s | موجا (الموجة) — مجاهد صيام`
-          : `%s | Almuja (Mujahid Siyam)`,
+          : `%s | Mujaa (Mujahid Siyam)`,
       default: dict.site.defaultTitle,
     },
     description: dict.site.description,
-    authors: [{ name: "Mujahid Siyam", url: "https://almujax.com" }],
+    authors: [{ name: "Mujahid Siyam", url: "https://mujaaco.com" }],
     openGraph: {
       title: dict.site.defaultTitle,
       description: dict.site.description,
@@ -35,10 +35,10 @@ export async function generateMetadata({
           : validLocale === "fr"
             ? "fr_FR"
             : "en_US",
-      siteName: "Almuja",
+      siteName: "Mujaa",
       images: [
         {
-          url: "https://almujax.com/img/profile-engineer-1200x630.png",
+          url: "https://mujaaco.com/img/profile-engineer-1200x630.png",
           width: 1200,
           height: 630,
           alt: "Mujahid Siyam",
@@ -49,9 +49,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: dict.site.defaultTitle,
       description: dict.site.description,
-      images: ["https://almujax.com/img/profile-engineer-1200x630.png"],
-      site: "@almujax",
-      creator: "@almujax",
+      images: ["https://mujaaco.com/img/profile-engineer-1200x630.png"],
+      site: "@mujaaco",
+      creator: "@mujaaco",
     },
     category: "technology",
     creator: "Mujahid Siyam",

@@ -11,7 +11,7 @@ import {
 import { ThemeProvider } from "./components/ThemeProvider";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://almujax.com"),
+  metadataBase: new URL("https://mujaaco.com"),
   manifest: "/manifest.json",
   icons: {
     icon: [
@@ -62,13 +62,13 @@ export default async function RootLayout({
         <link
           rel="alternate"
           type="application/rss+xml"
-          title="almujax.com RSS Feed"
+          title="mujaaco.com RSS Feed"
           href="/feed.xml"
         />
         <link
           rel="alternate"
           type="application/atom+xml"
-          title="almujax.com Atom Feed"
+          title="mujaaco.com Atom Feed"
           href="/atom.xml"
         />
         <link

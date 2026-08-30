@@ -12,11 +12,11 @@
  * - IndexNow is the supported programmatic protocol for Bing, Yandex, Seznam,
  *   and Naver. The generic api.indexnow.org endpoint forwards to all of them.
  * - Submissions are accepted (200/202) only after the search engine verifies
- *   the key file at https://almujax.com/<KEY>.txt. A 403 means the key has not
+ *   the key file at https://mujaaco.com/<KEY>.txt. A 403 means the key has not
  *   been verified yet — make sure the site is live before running this script.
  */
 
-const BASE_URL = "https://almujax.com";
+const BASE_URL = "https://mujaaco.com";
 const INDEXNOW_KEY = "1dac02664f4d441084286ceca1a2640e";
 
 const urls = [
@@ -91,7 +91,7 @@ async function submitBatch(endpoint, batch) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        host: "almujax.com",
+        host: "mujaaco.com",
         key: INDEXNOW_KEY,
         keyLocation: `${BASE_URL}/${INDEXNOW_KEY}.txt`,
         urlList: batch,

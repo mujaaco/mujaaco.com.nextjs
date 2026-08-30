@@ -1,6 +1,6 @@
-const SITE_URL = "https://almujax.com";
+const SITE_URL = "https://mujaaco.com";
 const PERSON_ID = `${SITE_URL}/#mujahid-siyam`;
-const ARTIST_ID = `${SITE_URL}/music#almuja`;
+const ARTIST_ID = `${SITE_URL}/music#mujaa`;
 
 const KNOWS_LANGUAGE = [
   { "@type": "Language", name: "Arabic", alternateName: "اللغة العربية" },
@@ -30,11 +30,11 @@ export function PersonStructuredData() {
     "@type": "Person",
     "@id": PERSON_ID,
     name: "Mujahid Siyam",
-    alternateName: ["Almuja"],
+    alternateName: ["Mujaa"],
     disambiguatingDescription:
-      "Software engineer, network engineer, and AI/cloud architect. Also known by the artist name Almuja.",
+      "Software engineer, network engineer, and AI/cloud architect. Also known by the artist name Mujaa.",
     description:
-      "Software engineer, network engineer, AI cloud architect, and data scientist based in Paris, France. Also releases music as Almuja.",
+      "Software engineer, network engineer, AI cloud architect, and data scientist based in Paris, France. Also releases music as Mujaa.",
     url: SITE_URL,
     image: `${SITE_URL}/img/profile-engineer-1200x630.png`,
     nationality: {
@@ -47,12 +47,12 @@ export function PersonStructuredData() {
     },
     knowsLanguage: KNOWS_LANGUAGE,
     sameAs: [
-      "https://github.com/almujax",
-      "https://linkedin.com/in/almujax",
-      "https://dev.to/almujax",
-      "https://reddit.com/user/almujax",
-      "https://x.com/almujax",
-      "https://youtube.com/@almujax",
+      "https://github.com/mujaaco",
+      "https://linkedin.com/in/mujaaco",
+      "https://dev.to/mujaaco",
+      "https://reddit.com/user/mujaaco",
+      "https://x.com/mujaaco",
+      "https://youtube.com/@mujaaco",
     ],
     hasOccupation: {
       "@type": "Occupation",
@@ -74,11 +74,11 @@ export function MusicArtistStructuredData() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": ARTIST_ID,
-    name: "Almuja",
+    name: "Mujaa",
     alternateName: ["موجا", "Mawja", "iammawja"],
     disambiguatingDescription:
       "Music artist, rapper and producer. Solo artist persona of engineer Mujahid Siyam.",
-    description: "Almuja is a rapper and producer. Real name Mujahid Siyam.",
+    description: "Mujaa is a rapper and producer. Real name Mujahid Siyam.",
     url: `${SITE_URL}/music`,
     image: `${SITE_URL}/img/profile-artist-1200x630.png`,
     jobTitle: "Music Artist",
@@ -87,14 +87,14 @@ export function MusicArtistStructuredData() {
       "https://open.spotify.com/artist/24n3um6erIOUxobs69qDPX",
       "https://www.deezer.com/en/artist/409144252",
       "https://play.anghami.com/artist/29651679",
-      "https://soundcloud.com/almujax",
-      "https://www.youtube.com/@AlmujaMusic",
-      "https://music.youtube.com/@AlmujaMusic",
-      "https://almujax.bandcamp.com",
+      "https://soundcloud.com/mujaaco",
+      "https://www.youtube.com/@MujaaMusic",
+      "https://music.youtube.com/@MujaaMusic",
+      "https://mujaaco.bandcamp.com",
       "https://music.amazon.fr/artists/B0HDMF43R7",
-      "https://www.pandora.com/artist/almujax",
-      "https://instagram.com/almujax",
-      "https://tiktok.com/@almujax",
+      "https://www.pandora.com/artist/mujaaco",
+      "https://instagram.com/mujaaco",
+      "https://tiktok.com/@mujaaco",
     ],
   };
 
@@ -206,7 +206,7 @@ export function OrganizationStructuredData() {
     url: "https://zaroxi.com",
     description:
       "Zaroxi Studio is the software development and creative technology company founded by Mujahid Siyam. Building AI-first systems, developer tools, and creative technology solutions including a GPU-accelerated IDE written in Rust.",
-    email: "hello@almujax.com",
+    email: "hello@mujaaco.com",
     foundingDate: "2023",
     location: {
       "@type": "Place",
@@ -228,10 +228,10 @@ export function WebSiteStructuredData() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
-    name: "Almuja",
+    name: "Mujaa",
     url: SITE_URL,
     description:
-      "Official website of Mujahid Siyam, also known by the artist name Almuja. Hosts his software engineering projects, technical writing, and music.",
+      "Official website of Mujahid Siyam, also known by the artist name Mujaa. Hosts his software engineering projects, technical writing, and music.",
     inLanguage: ["en", "ar", "fr"],
     about: personRef,
     publisher: {

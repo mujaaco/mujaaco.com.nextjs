@@ -24,31 +24,31 @@ export async function generateMetadata({
     title: t.music.title,
     description: t.music.description,
     alternates: {
-      canonical: `https://almujax.com/${validLocale}/music`,
+      canonical: `https://mujaaco.com/${validLocale}/music`,
       languages: localeLanguages("music"),
     },
     openGraph: {
       title: t.music.title,
       description: t.music.description,
-      url: `https://almujax.com/${validLocale}/music`,
+      url: `https://mujaaco.com/${validLocale}/music`,
       type: "music.playlist",
       images: [
         {
-          url: "https://almujax.com/img/profile-artist-1200x630.png",
+          url: "https://mujaaco.com/img/profile-artist-1200x630.png",
           width: 1200,
           height: 630,
-          alt: "Almuja",
+          alt: "Mujaa",
         },
       ],
-      siteName: "Almuja",
+      siteName: "Mujaa",
     },
     twitter: {
       card: "summary_large_image",
       title: t.music.title,
       description: t.music.description,
-      images: ["https://almujax.com/img/profile-artist-1200x630.png"],
-      site: "@almujax",
-      creator: "@almujax",
+      images: ["https://mujaaco.com/img/profile-artist-1200x630.png"],
+      site: "@mujaaco",
+      creator: "@mujaaco",
     },
   };
 }
@@ -72,11 +72,11 @@ export default async function MusicPage({
         items={[
           {
             name: validLocale === "ar" ? "الرئيسية" : "Home",
-            url: `https://almujax.com/${validLocale}`,
+            url: `https://mujaaco.com/${validLocale}`,
           },
           {
             name: dict.music.heading,
-            url: `https://almujax.com/${validLocale}/music`,
+            url: `https://mujaaco.com/${validLocale}/music`,
           },
         ]}
       />

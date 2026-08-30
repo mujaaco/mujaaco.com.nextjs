@@ -1,10 +1,10 @@
 {
-  "name": "Almuja | Mujahid Siyam",
-  "short_name": "Almuja",
-  "description": "Official website of Mujahid Siyam (Almuja). Software Engineer, AI Engineer, Cloud Architect, DevSecOps, and Music Artist. Projects, writing, and original music.",
+  "name": "Mujaa | Mujahid Siyam",
+  "short_name": "Mujaa",
+  "description": "Official website of Mujahid Siyam (Mujaa). Software Engineer, AI Engineer, Cloud Architect, DevSecOps, and Music Artist. Projects, writing, and original music.",
   "start_url": "/",
   "scope": "/",
-  "id": "almujax-pwa",
+  "id": "mujaaco-pwa",
   "display": "standalone",
   "orientation": "any",
   "lang": "en",
@@ -32,7 +32,7 @@
       "sizes": "1200x630",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Homepage of Almuja"
+      "label": "Homepage of Mujaa"
     }
   ],
   "shortcuts": [

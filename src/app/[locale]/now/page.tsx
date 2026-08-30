@@ -17,49 +17,49 @@ export async function generateMetadata({
     title:
       validLocale === "ar"
         ? "الآن | موجا — مجاهد صيام"
-        : "Now | Almuja (Mujahid Siyam)",
+        : "Now | Mujaa (Mujahid Siyam)",
     description:
       validLocale === "ar"
         ? "ما يركز عليه موجا — مجاهد صيام حالياً من عمل وتعلم واهتمامات."
-        : "What Mujahid Siyam (Almuja) is focused on right now — work, learning, and current interests.",
+        : "What Mujahid Siyam (Mujaa) is focused on right now — work, learning, and current interests.",
     alternates: {
-      canonical: `https://almujax.com/${validLocale}/now`,
+      canonical: `https://mujaaco.com/${validLocale}/now`,
       languages: localeLanguages("now"),
     },
     openGraph: {
       title:
         validLocale === "ar"
           ? "الآن | موجا — مجاهد صيام"
-          : "Now | Almuja (Mujahid Siyam)",
+          : "Now | Mujaa (Mujahid Siyam)",
       description:
         validLocale === "ar"
           ? "ما يركز عليه موجا — مجاهد صيام حالياً."
-          : "What Mujahid Siyam (Almuja) is focused on right now.",
-      url: `https://almujax.com/${validLocale}/now`,
+          : "What Mujahid Siyam (Mujaa) is focused on right now.",
+      url: `https://mujaaco.com/${validLocale}/now`,
       type: "website",
       images: [
         {
-          url: "https://almujax.com/img/profile-engineer-1200x630.png",
+          url: "https://mujaaco.com/img/profile-engineer-1200x630.png",
           width: 1200,
           height: 630,
           alt: "Mujahid Siyam",
         },
       ],
-      siteName: "Almuja",
+      siteName: "Mujaa",
     },
     twitter: {
       card: "summary_large_image",
       title:
         validLocale === "ar"
           ? "الآن | موجا — مجاهد صيام"
-          : "Now | Almuja (Mujahid Siyam)",
+          : "Now | Mujaa (Mujahid Siyam)",
       description:
         validLocale === "ar"
           ? "ما يركز عليه موجا — مجاهد صيام حالياً."
-          : "What Mujahid Siyam (Almuja) is focused on right now.",
-      images: ["https://almujax.com/img/profile-engineer-1200x630.png"],
-      site: "@almujax",
-      creator: "@almujax",
+          : "What Mujahid Siyam (Mujaa) is focused on right now.",
+      images: ["https://mujaaco.com/img/profile-engineer-1200x630.png"],
+      site: "@mujaaco",
+      creator: "@mujaaco",
     },
   };
 }
@@ -246,11 +246,11 @@ export default async function NowPage({
         items={[
           {
             name: validLocale === "ar" ? "الرئيسية" : "Home",
-            url: `https://almujax.com/${validLocale}`,
+            url: `https://mujaaco.com/${validLocale}`,
           },
           {
             name: sectionTitle,
-            url: `https://almujax.com/${validLocale}/now`,
+            url: `https://mujaaco.com/${validLocale}/now`,
           },
         ]}
       />

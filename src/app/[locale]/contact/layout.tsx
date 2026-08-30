@@ -18,13 +18,13 @@ export async function generateMetadata({
     title: t.contact.title,
     description: t.contact.description,
     alternates: {
-      canonical: `https://almujax.com/${validLocale}/contact`,
+      canonical: `https://mujaaco.com/${validLocale}/contact`,
       languages: localeLanguages("contact"),
     },
     openGraph: {
       title: t.contact.title,
       description: t.contact.description,
-      url: `https://almujax.com/${validLocale}/contact`,
+      url: `https://mujaaco.com/${validLocale}/contact`,
       type: "website",
     },
   };

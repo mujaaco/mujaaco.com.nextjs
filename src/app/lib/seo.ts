@@ -1,4 +1,4 @@
-const BASE_URL = "https://almujax.com";
+const BASE_URL = "https://mujaaco.com";
 
 export function localeLanguages(path?: string): Record<string, string> {
   const cleanPath = path ? `/${path.replace(/^\/+|\/+$/g, "")}` : "";
