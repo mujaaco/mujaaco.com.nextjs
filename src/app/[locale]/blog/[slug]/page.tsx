@@ -117,7 +117,7 @@ export async function generateMetadata({
     const publishedTime = data.date;
 
     return {
-      title: `${title} | Mujaa (Mujahid Siyam)`,
+      title: { absolute: title },
       description,
       alternates: {
         canonical: `https://mujaaco.com/${validLocale}/blog/${slug}`,
@@ -129,7 +129,7 @@ export async function generateMetadata({
         },
       },
       openGraph: {
-        title: `${title} | Mujaa (Mujahid Siyam)`,
+        title,
         description,
         type: "article",
         url: `https://mujaaco.com/${validLocale}/blog/${slug}`,
@@ -141,7 +141,7 @@ export async function generateMetadata({
       },
       twitter: {
         card: "summary_large_image",
-        title: `${title} | Mujahid Siyam`,
+        title,
         description,
         images: [image],
         site: "@mujaaco",

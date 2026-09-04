@@ -75,11 +75,11 @@ export async function generateMetadata({
     const title = data.title || slug;
     const desc = data.description || "Open-source project by Mujahid Siyam";
     return {
-      title: `${title} | Mujaa (Mujahid Siyam)`,
+      title: { absolute: title },
       description: desc,
       alternates: base,
       openGraph: {
-        title: `${title} | Mujaa (Mujahid Siyam)`,
+        title,
         description: desc,
         type: "article",
         url: `https://mujaaco.com/${validLocale}/projects/${slug}`,
