@@ -17,7 +17,7 @@ export async function generateMetadata({
     : "en";
   const dict = getDictionary(validLocale);
   return {
-    title: dict.home.title,
+    title: { absolute: dict.home.title },
     description: dict.home.description,
     alternates: {
       canonical: `https://mujaaco.com/${validLocale}`,

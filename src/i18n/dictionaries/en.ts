@@ -20,8 +20,7 @@ const en = {
     blogBadge: "Blog",
   },
   home: {
-    title:
-      "Mujaa (Mujahid Siyam) — Software, Network, AI & Systems Engineer · Rapper · Content Creator | mujaaco",
+    title: "Mujahid Siyam (Mujaa) — Software Engineer & Music Artist",
     description:
       "Mujahid Siyam (mujaaco) is a software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, music producer, and content creator born in Sudan, based in Paris, France. He builds systems, writes code, manages infrastructure, and makes music.",
     sparkle: "Building systems and making music",

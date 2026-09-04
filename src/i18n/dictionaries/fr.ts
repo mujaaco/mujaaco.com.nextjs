@@ -20,8 +20,7 @@ const fr = {
     blogBadge: "Blog",
   },
   home: {
-    title:
-      "Mujaa (Mujahid Siyam) | Ingénieur Logiciel · Réseaux · IA & Systèmes | mujaaco",
+    title: "Mujahid Siyam (Mujaa) — Ingénieur Logiciel & Artiste Musical",
     description:
       "Mujahid Siyam (mujaaco) est ingénieur logiciel, ingénieur réseaux, cloud architect IA, data scientist, administrateur systèmes (Linux & Windows), rappeur, producteur musical et créateur de contenu né au Soudan et basé à Paris, France. Il construit des systèmes, écrit du code, gère des infrastructures et fait de la musique.",
     sparkle: "Construire des systèmes et faire de la musique",
