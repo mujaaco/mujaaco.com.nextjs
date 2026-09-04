@@ -133,8 +133,7 @@ const en = {
     ctaButton: "Get in touch",
   },
   about: {
-    title:
-      "About | Mujahid Siyam (Mujaa / mujaaco) — Software Engineer, Network Engineer, AI Cloud Architect, Data Scientist, Systems Administrator & Music Artist",
+    title: "About",
     description:
       "Mujahid Siyam (Mujaa / mujaaco) is a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator (Linux & Windows), rapper, and hip-hop producer based in Paris, France. Explore his professional profile, experience, skills, and story.",
     heading: "About Mujahid Siyam",
@@ -240,7 +239,7 @@ const en = {
     ],
   },
   blog: {
-    title: "Blog | Mujaa (Mujahid Siyam) — Software, AI & Systems Engineering",
+    title: "Blog",
     description:
       "Articles by Mujahid Siyam (Mujaa / mujaaco) about software engineering, AI, Rust, DevSecOps, cloud infrastructure, networking, systems administration, and creative technology. Real writing from a real person.",
     backToBlog: "Back to Blog",
@@ -283,7 +282,7 @@ const en = {
     browsePosts: "Browse posts",
   },
   projects: {
-    title: "Projects | Mujaa (Mujahid Siyam) — Open Source & Developer Tools",
+    title: "Projects",
     description:
       "Open source projects and contributions by Mujahid Siyam (Mujaa / mujaaco). Developer tools, NixOS configurations, AI utilities, infrastructure automation, systems administration tools, and creative experiments.",
     backToProjects: "Back to Projects",
@@ -309,8 +308,7 @@ const en = {
     liveSite: "Live",
   },
   music: {
-    title:
-      "Music | Mujaa | Arabic Rap | Sudanese Rap | Middle Eastern Hip Hop | African Rap",
+    title: "Music",
     description:
       "Mujaa (موجا) is the artist name of Mujahid Siyam (handle: mujaaco). Sudanese rapper and hip-hop producer creating Arabic, Middle Eastern, and African rap. Listen to KAKASHI EP (2022). Rockstar EP coming August 2026. Follow for upcoming releases.",
     heading: "Mujaa — Music",
@@ -328,7 +326,7 @@ const en = {
       "I started making music when I was 16, long before I wrote a line of code. Growing up in Sudan, music was everywhere — and I wanted to be part of it. I formed bands, wrote lyrics, recorded wherever I could, and performed in front of anyone who would listen. Music was my first language for building things: you start with an idea, you shape it, you refine it, and then you put it out there and see how people respond.\n\nWhen I moved to France, I stepped away from music to focus on software engineering. For years, code replaced everything. I built systems, managed infrastructure, worked on AI projects. It was demanding and rewarding, but something was missing. In 2022, after a long silence, I went back to the studio. I produced my first EP — KAKASHI — under the name Mujaa. It was raw, honest, and exactly what I needed to make. It wasn't a comeback strategy. It was me remembering who I was before I became an engineer.\n\nNow I'm working on my next EP, Rockstar, set for release in August 2026. It's the next chapter — bigger, more focused, and a deeper expression of where I am now. Music is not a side project. It's part of my identity, the same way engineering is. If you've listened to KAKASHI, you already know the sound. If you haven't, now's a good time.\n\nI make Arabic rap and Sudanese rap, with hip hop production that draws from both my roots and my life in Europe. The music is personal. It's about identity, displacement, ambition, and the tension between who you were and who you're becoming. If that resonates with you, I think you'll like what's coming.",
   },
   contact: {
-    title: "Contact | Mujahid Siyam (Mujaa / mujaaco) — Get in Touch",
+    title: "Contact",
     description:
       "Get in touch with Mujahid Siyam (Mujaa / mujaaco), a Sudanese software engineer, network engineer, AI cloud architect, data scientist, systems administrator, rapper, and hip-hop producer based in Paris, France. Engineering collaboration, AI projects, infrastructure consulting, music inquiries — or just a warm hello.",
     heading: "Get in touch",

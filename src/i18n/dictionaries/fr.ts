@@ -133,8 +133,7 @@ const fr = {
     ctaButton: "Me contacter",
   },
   about: {
-    title:
-      "À propos | Mujahid Siyam (Mujaa / mujaaco) — Ingénieur Logiciel · Réseaux · IA Cloud · Data Scientist · Admin Systèmes & Artiste Musical",
+    title: "À propos",
     description:
       "Mujahid Siyam (Mujaa / الموجة, pseudonyme: mujaaco) est un ingénieur logiciel, ingénieur réseaux, cloud architect IA, data scientist, administrateur systèmes (Linux & Windows), rappeur et producteur de hip-hop soudanais basé à Paris, France. Découvrez son profil professionnel, son expérience, ses compétences et son parcours.",
     heading: "À propos de Mujahid Siyam",
@@ -240,7 +239,7 @@ const fr = {
     ],
   },
   blog: {
-    title: "Blog | Mujaa (Mujahid Siyam) — Logiciel, IA & Ingénierie Systèmes",
+    title: "Blog",
     description:
       "Articles de Mujahid Siyam (Mujaa) sur l'ingénierie logicielle, l'IA, Rust, le DevSecOps, l'infrastructure cloud, les réseaux, l'administration systèmes et la technologie créative. De vrais écrits, pas du contenu SEO.",
     backToBlog: "Retour au blog",
@@ -283,7 +282,7 @@ const fr = {
     browsePosts: "Parcourir",
   },
   projects: {
-    title: "Projets | Mujaa (Mujahid Siyam) — Open Source & Outils Développeur",
+    title: "Projets",
     description:
       "Projets open source et contributions de Mujahid Siyam (Mujaa). Outils développeur, configurations NixOS, utilitaires IA, automatisation d'infrastructure et expérimentations créatives.",
     backToProjects: "Retour aux projets",
@@ -309,8 +308,7 @@ const fr = {
     liveSite: "En ligne",
   },
   music: {
-    title:
-      "Musique | Mujaa | Rap Arabe | Rap Soudanais | Hip Hop Moyen-Oriental | Rap Africain",
+    title: "Musique",
     description:
       "Mujaa (موجا) est le nom d'artiste de Mujahid Siyam (pseudonyme: mujaaco). Rappeur soudanais et producteur de hip-hop créant du rap arabe, moyen-oriental et africain. Écoutez l'EP KAKASHI (2022). EP Rockstar à venir en août 2026. Suivez les prochaines sorties.",
     heading: "Mujaa — Musique",
@@ -328,7 +326,7 @@ const fr = {
       "J'ai commencé la musique à 16 ans, bien avant d'écrire une seule ligne de code. En grandissant au Soudan, la musique était partout — et je voulais en faire partie. J'ai formé des groupes, écrit des paroles, enregistré partout où je pouvais et joué devant quiconque voulait bien écouter. La musique était mon premier langage pour construire des choses : on part d'une idée, on la façonne, on l'affine, puis on la présente et on voit comment les gens réagissent.\n\nQuand j'ai déménagé en France, j'ai mis la musique de côté pour me concentrer sur l'ingénierie logicielle. Pendant des années, le code a tout remplacé. J'ai construit des systèmes, géré des infrastructures, travaillé sur des projets d'IA. C'était exigeant et gratifiant, mais quelque chose manquait. En 2022, après un long silence, je suis retourné en studio. J'ai produit mon premier EP — KAKASHI — sous le nom Mujaa. C'était brut, honnête et exactement ce que j'avais besoin de faire. Ce n'était pas une stratégie de comeback. C'était moi qui me souvenais de qui j'étais avant de devenir ingénieur.\n\nMaintenant, je travaille sur mon prochain EP, Rockstar, prévu pour août 2026. C'est le chapitre suivant — plus grand, plus concentré, une expression plus profonde de là où j'en suis. La musique n'est pas un projet secondaire. Elle fait partie de mon identité, tout comme l'ingénierie. Si vous avez écouté KAKASHI, vous connaissez le son. Si ce n'est pas le cas, c'est le bon moment.\n\nJe fais du rap arabe et du rap soudanais, avec une production hip hop qui puise dans mes racines et ma vie en Europe. La musique est personnelle. Elle parle d'identité, de déplacement, d'ambition et de la tension entre qui l'on était et qui l'on devient. Si cela vous parle, je pense que vous aimerez ce qui arrive.",
   },
   contact: {
-    title: "Contact | Mujahid Siyam (Mujaa / mujaaco) — Prendre contact",
+    title: "Contact",
     description:
       "Contactez Mujahid Siyam (Mujaa, pseudonyme: mujaaco), un ingénieur logiciel soudanais, rappeur et producteur de hip-hop basé à Paris, France. Collaboration en ingénierie, projets IA, consulting en infrastructure, demandes musicales, ou simplement pour dire bonjour.",
     heading: "Me contacter",
