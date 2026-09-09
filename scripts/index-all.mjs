@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
+import { promises as fs } from "node:fs";
+import { join } from "node:path";
+import matter from "gray-matter";
+
 /**
  * Submit all site URLs to search engines via IndexNow.
  * Run after deployment: node scripts/index-all.mjs
@@ -18,61 +22,56 @@
 
 const BASE_URL = "https://mujaaco.com";
 const INDEXNOW_KEY = "1dac02664f4d441084286ceca1a2640e";
+const locales = ["en", "ar", "fr"];
 
-const urls = [
-  `${BASE_URL}/en`,
-  `${BASE_URL}/en/about`,
-  `${BASE_URL}/en/projects`,
-  `${BASE_URL}/en/blog`,
-  `${BASE_URL}/en/contact`,
-  `${BASE_URL}/en/music`,
-  `${BASE_URL}/ar`,
-  `${BASE_URL}/ar/about`,
-  `${BASE_URL}/ar/projects`,
-  `${BASE_URL}/ar/blog`,
-  `${BASE_URL}/ar/contact`,
-  `${BASE_URL}/ar/music`,
-  `${BASE_URL}/fr`,
-  `${BASE_URL}/fr/about`,
-  `${BASE_URL}/fr/projects`,
-  `${BASE_URL}/fr/blog`,
-  `${BASE_URL}/fr/contact`,
-  `${BASE_URL}/fr/music`,
+const urls = [];
+
+// Static pages (all locales)
+const staticRoutes = [
+  "",
+  "about",
+  "projects",
+  "blog",
+  "contact",
+  "music",
+  "now",
 ];
-
-// Add blog posts
-const blogPosts = [
-  "python-data-science",
-  "react-hooks-guide",
-  "typescript-nextjs",
-  "rust-systems-programming",
-  "building-llm-apps",
-  "devsecops-pipeline",
-  "nixos-reproducible-builds",
-  "postgres-optimization",
-  "docker-kubernetes-deployment",
-  "api-design-rest",
-];
-
-for (const slug of blogPosts) {
-  urls.push(
-    `${BASE_URL}/en/blog/${slug}`,
-    `${BASE_URL}/ar/blog/${slug}`,
-    `${BASE_URL}/fr/blog/${slug}`,
-  );
+for (const locale of locales) {
+  for (const route of staticRoutes) {
+    urls.push(
+      route ? `${BASE_URL}/${locale}/${route}` : `${BASE_URL}/${locale}`,
+    );
+  }
 }
 
-// Add projects
-const projects = ["funmacs", "mujaos"];
-for (const slug of projects) {
-  urls.push(
-    `${BASE_URL}/en/projects/${slug}`,
-    `${BASE_URL}/ar/projects/${slug}`,
-    `${BASE_URL}/fr/projects/${slug}`,
-  );
+// Blog posts (all locales) — read dynamically so the list never goes stale
+const blogDir = join(process.cwd(), "src", "content", "blog");
+for (const file of await fs.readdir(blogDir)) {
+  if (!file.endsWith(".mdx")) continue;
+  const slug = file.replace(/\.mdx$/, "");
+  const { data } = matter(await fs.readFile(join(blogDir, file), "utf8"));
+  if (data.draft === true) continue;
+  for (const locale of locales) {
+    urls.push(`${BASE_URL}/${locale}/blog/${slug}`);
+  }
 }
 
-// Add feeds and sitemap
+// Projects (all locales) — read dynamically so the list never goes stale
+const projectsDir = join(process.cwd(), "src", "content", "projects");
+for (const file of await fs.readdir(projectsDir, { recursive: true })) {
+  if (typeof file !== "string" || !file.endsWith(".mdx")) continue;
+  const slug = file
+    .split("/")
+    .pop()
+    .replace(/\.mdx$/, "");
+  const { data } = matter(await fs.readFile(join(projectsDir, file), "utf8"));
+  if (data.draft === true) continue;
+  for (const locale of locales) {
+    urls.push(`${BASE_URL}/${locale}/projects/${slug}`);
+  }
+}
+
+// Feeds and sitemap
 urls.push(`${BASE_URL}/sitemap.xml`);
 urls.push(`${BASE_URL}/feed.xml`);
 urls.push(`${BASE_URL}/atom.xml`);

@@ -40,16 +40,17 @@ async function getBlogPosts(): Promise<MetadataRoute.Sitemap> {
           const image = isValidImage(data.image)
             ? toAbsoluteImage(data.image)
             : undefined;
+          const lastModified = postDate > stats.mtime ? postDate : stats.mtime;
 
-          return {
-            url: `${baseUrl}/en/blog/${slug}`,
-            lastModified: postDate > stats.mtime ? postDate : stats.mtime,
+          return locales.map((locale) => ({
+            url: `${baseUrl}/${locale}/blog/${slug}`,
+            lastModified,
             images: image ? [image] : undefined,
-          };
+          }));
         }),
     );
 
-    return posts.filter((p): p is NonNullable<typeof p> => p !== null);
+    return posts.filter((p): p is NonNullable<typeof p> => p !== null).flat();
   } catch {
     return [];
   }
@@ -80,16 +81,19 @@ async function getProjects(): Promise<MetadataRoute.Sitemap> {
           const image = isValidImage(data.image)
             ? toAbsoluteImage(data.image)
             : undefined;
+          const lastModified = projDate > stats.mtime ? projDate : stats.mtime;
 
-          return {
-            url: `${baseUrl}/en/projects/${slug}`,
-            lastModified: projDate > stats.mtime ? projDate : stats.mtime,
+          return locales.map((locale) => ({
+            url: `${baseUrl}/${locale}/projects/${slug}`,
+            lastModified,
             images: image ? [image] : undefined,
-          };
+          }));
         }),
     );
 
-    return projects.filter((p): p is NonNullable<typeof p> => p !== null);
+    return projects
+      .filter((p): p is NonNullable<typeof p> => p !== null)
+      .flat();
   } catch {
     return [];
   }
