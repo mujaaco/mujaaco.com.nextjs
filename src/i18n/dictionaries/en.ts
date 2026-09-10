@@ -11,6 +11,7 @@ const en = {
     projects: "Projects",
     blog: "Blog",
     music: "Music",
+    videos: "Videos",
     about: "About",
     contact: "Contact",
     search: "Search",

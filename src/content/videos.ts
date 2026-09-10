@@ -44,3 +44,32 @@ export function videoThumbnails(id: string): string[] {
     `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
   ];
 }
+
+export const categoryTheme: Record<
+  VideoCategory,
+  {
+    label: Record<"en" | "ar" | "fr", string>;
+    badge: string;
+    dot: string;
+    glow: string;
+  }
+> = {
+  music: {
+    label: { en: "Music", ar: "موسيقى", fr: "Musique" },
+    badge: "bg-purple-500/10 text-purple-300 border-purple-500/20",
+    dot: "bg-purple-500",
+    glow: "from-purple-500/20 via-fuchsia-500/10 to-transparent",
+  },
+  development: {
+    label: { en: "Development", ar: "تطوير", fr: "Développement" },
+    badge: "bg-sky-500/10 text-sky-300 border-sky-500/20",
+    dot: "bg-sky-500",
+    glow: "from-sky-500/20 via-cyan-500/10 to-transparent",
+  },
+  lifestyle: {
+    label: { en: "Lifestyle", ar: "حياة", fr: "Lifestyle" },
+    badge: "bg-amber-500/10 text-amber-300 border-amber-500/20",
+    dot: "bg-amber-500",
+    glow: "from-amber-500/20 via-emerald-500/10 to-transparent",
+  },
+};

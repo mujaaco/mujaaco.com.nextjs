@@ -11,6 +11,7 @@ const ar = {
     projects: "المشاريع",
     blog: "المدونة",
     music: "الموسيقى",
+    videos: "الفيديوهات",
     about: "عنّي",
     contact: "اتصل بي",
     search: "بحث",

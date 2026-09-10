@@ -11,6 +11,7 @@ const fr = {
     projects: "Projets",
     blog: "Blog",
     music: "Musique",
+    videos: "Vidéos",
     about: "À propos",
     contact: "Contact",
     search: "Rechercher",

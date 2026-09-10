@@ -17,6 +17,7 @@ interface HeaderProps {
     projects: string;
     blog: string;
     music: string;
+    videos: string;
     about: string;
     contact: string;
     search: string;
@@ -33,6 +34,7 @@ export default function Header({ locale, dict, nav }: HeaderProps) {
     { href: `/${locale}/projects`, label: nav.projects },
     { href: `/${locale}/blog`, label: nav.blog },
     { href: `/${locale}/music`, label: nav.music },
+    { href: `/${locale}/videos`, label: nav.videos },
     { href: `/${locale}/now`, label: nav.now },
     { href: `/${locale}/contact`, label: nav.contact },
   ];
