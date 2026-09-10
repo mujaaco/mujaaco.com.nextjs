@@ -327,3 +327,41 @@ export function SoftwareSourceCodeStructuredData({
 
   return <JsonLd data={structuredData} />;
 }
+
+export function VideoObjectStructuredData({
+  video,
+  url,
+}: {
+  video: {
+    id: string;
+    title: string;
+    description: string;
+    uploadDate: string;
+    duration?: string;
+  };
+  url: string;
+}) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "@id": `${url}#video`,
+    name: video.title,
+    description: video.description,
+    thumbnailUrl: [
+      `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`,
+      `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`,
+    ],
+    uploadDate: video.uploadDate,
+    duration: video.duration,
+    embedUrl: `https://www.youtube.com/embed/${video.id}`,
+    contentUrl: `https://www.youtube.com/watch?v=${video.id}`,
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#org`,
+      name: "Zaroxi Studio",
+      url: "https://zaroxi.com",
+    },
+  };
+
+  return <JsonLd data={structuredData} />;
+}

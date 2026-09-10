@@ -8,7 +8,9 @@ import {
   Play,
   Sparkles,
 } from "lucide-react";
+import Link from "next/link";
 import { useState } from "react";
+import { videos } from "@/content/videos";
 
 const SpotifyIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
   <svg viewBox="0 0 24 24" className={className} fill="currentColor">
@@ -160,7 +162,8 @@ const streamingPlatforms = [
   },
 ] as const;
 
-const featuredVideo = "XLiBdOhSnF0";
+const musicVideos = videos.filter((v) => v.category === "music");
+const featuredVideo = musicVideos.find((v) => v.featured) ?? musicVideos[0];
 const youtubeMusicPlaylist = "OLAK5uy_nAor0lFvK6ZoNznx6nFA9uVU7yhR7qOLc";
 
 export function MusicContent({ locale, t }: MusicContentProps) {
@@ -567,81 +570,90 @@ export function MusicContent({ locale, t }: MusicContentProps) {
           </div>
 
           {/* Hero Official Audio */}
-          <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-red-500/5 via-purple-500/5 to-violet-500/5 p-6 sm:p-10 shadow-2xl shadow-black/5 mb-8 group">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-80 h-80 bg-violet-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500/[0.03] rounded-full blur-2xl pointer-events-none" />
+          {featuredVideo && (
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-red-500/5 via-purple-500/5 to-violet-500/5 p-6 sm:p-10 shadow-2xl shadow-black/5 mb-8 group">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-red-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none" />
+              <div className="absolute bottom-0 left-0 w-80 h-80 bg-violet-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3 pointer-events-none" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500/[0.03] rounded-full blur-2xl pointer-events-none" />
 
-            <div className="relative z-10">
-              <div className="flex items-center gap-4 mb-6">
-                <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
-                </span>
-                <span className="text-xs font-bold uppercase tracking-[0.15em] text-red-400/80">
-                  {locale === "ar"
-                    ? "الفيديو الرسمي"
-                    : locale === "fr"
-                      ? "Vidéo Officielle"
-                      : "Official Audio"}
-                </span>
-              </div>
-
-              <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-2xl shadow-black/20 ring-1 ring-white/5 mb-6">
-                <iframe
-                  src={`https://www.youtube.com/embed/${featuredVideo}`}
-                  width="100%"
-                  height="100%"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                  className="w-full h-full"
-                  title="Official Audio"
-                />
-              </div>
-
-              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                <div>
-                  <h3 className="text-lg font-bold text-foreground mb-1">
+              <div className="relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500" />
+                  </span>
+                  <span className="text-xs font-bold uppercase tracking-[0.15em] text-red-400/80">
                     {locale === "ar"
-                      ? "Rockstar — الصوت الرسمي"
+                      ? "الفيديو الرسمي"
                       : locale === "fr"
-                        ? "Rockstar — Audio Officiel"
-                        : "Rockstar — Official Audio"}
-                  </h3>
-                  <p className="text-sm text-foreground/40">@MujaaMusic</p>
+                        ? "Vidéo Officielle"
+                        : "Official Audio"}
+                  </span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <a
-                    href="https://www.youtube.com/@MujaaMusic"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500/20 hover:text-red-300 font-medium text-sm transition-all duration-300 hover:scale-[1.02]"
-                  >
-                    <YouTubeIcon className="w-4 h-4" />
-                    {locale === "ar"
-                      ? "اشترك"
-                      : locale === "fr"
-                        ? "S'abonner"
-                        : "Subscribe"}
-                  </a>
-                  <a
-                    href={`https://youtu.be/${featuredVideo}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm text-foreground/50 hover:text-foreground font-medium transition-colors"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    {locale === "ar"
-                      ? "افتح في يوتيوب"
-                      : locale === "fr"
-                        ? "Ouvrir sur YouTube"
-                        : "Open on YouTube"}
-                  </a>
+
+                <div className="aspect-video w-full rounded-2xl overflow-hidden shadow-2xl shadow-black/20 ring-1 ring-white/5 mb-6">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${featuredVideo.id}`}
+                    width="100%"
+                    height="100%"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                    className="w-full h-full"
+                    title={featuredVideo.title}
+                  />
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div>
+                    <h3 className="text-lg font-bold text-foreground mb-1">
+                      {featuredVideo.title}
+                    </h3>
+                    <p className="text-sm text-foreground/40">@MujaaMusic</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Link
+                      href={`/${locale}/videos/${featuredVideo.id}`}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500/20 hover:text-red-300 font-medium text-sm transition-all duration-300 hover:scale-[1.02]"
+                    >
+                      <Play className="w-4 h-4" />
+                      {locale === "ar"
+                        ? "شاهد"
+                        : locale === "fr"
+                          ? "Regarder"
+                          : "Watch"}
+                    </Link>
+                    <a
+                      href="https://www.youtube.com/@MujaaMusic"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-red-500/10 text-red-400 hover:bg-red-500/20 hover:text-red-300 font-medium text-sm transition-all duration-300 hover:scale-[1.02]"
+                    >
+                      <YouTubeIcon className="w-4 h-4" />
+                      {locale === "ar"
+                        ? "اشترك"
+                        : locale === "fr"
+                          ? "S'abonner"
+                          : "Subscribe"}
+                    </a>
+                    <a
+                      href={`https://youtu.be/${featuredVideo.id}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-sm text-foreground/50 hover:text-foreground font-medium transition-colors"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      {locale === "ar"
+                        ? "افتح في يوتيوب"
+                        : locale === "fr"
+                          ? "Ouvrir sur YouTube"
+                          : "Open on YouTube"}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
 
           {/* YouTube Music Playlist */}
           <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-red-500/[0.02] via-orange-500/[0.02] to-transparent p-6 sm:p-10 shadow-xl shadow-black/5 group">

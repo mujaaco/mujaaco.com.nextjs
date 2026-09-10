@@ -35,6 +35,7 @@ const staticRoutes = [
   "contact",
   "music",
   "now",
+  "videos",
 ];
 for (const locale of locales) {
   for (const route of staticRoutes) {
@@ -68,6 +69,20 @@ for (const file of await fs.readdir(projectsDir, { recursive: true })) {
   if (data.draft === true) continue;
   for (const locale of locales) {
     urls.push(`${BASE_URL}/${locale}/projects/${slug}`);
+  }
+}
+
+// Videos (all locales) — extract IDs from the single source of truth
+const videosSource = await fs.readFile(
+  join(process.cwd(), "src", "content", "videos.ts"),
+  "utf8",
+);
+const videoIds = [...videosSource.matchAll(/id:\s*"([^"]+)"/g)].map(
+  (m) => m[1],
+);
+for (const id of videoIds) {
+  for (const locale of locales) {
+    urls.push(`${BASE_URL}/${locale}/videos/${id}`);
   }
 }
 

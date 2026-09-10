@@ -2,6 +2,7 @@ import { promises as fs } from "node:fs";
 import { join } from "node:path";
 import matter from "gray-matter";
 import type { MetadataRoute } from "next";
+import { videos, videoThumbnails, videoWatchUrl } from "@/content/videos";
 
 const baseUrl = "https://mujaaco.com";
 const locales = ["en", "ar", "fr"];
@@ -110,6 +111,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { slug: "now" },
     { slug: "contact" },
     { slug: "music" },
+    { slug: "videos" },
   ];
 
   const staticPages: MetadataRoute.Sitemap = [];
@@ -124,8 +126,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
+  const videoPages: MetadataRoute.Sitemap = [];
+  for (const video of videos) {
+    for (const locale of locales) {
+      videoPages.push({
+        url: `${baseUrl}/${locale}/videos/${video.id}`,
+        lastModified: video.uploadDate,
+        videos: [
+          {
+            title: video.title,
+            description: video.description,
+            thumbnail_loc: videoThumbnails(video.id)[0],
+            player_loc: videoWatchUrl(video.id),
+            publication_date: video.uploadDate,
+            family_friendly: "yes",
+          },
+        ],
+      });
+    }
+  }
+
   const blogPosts = await getBlogPosts();
   const projects = await getProjects();
 
-  return [...staticPages, ...blogPosts, ...projects];
+  return [...staticPages, ...videoPages, ...blogPosts, ...projects];
 }
